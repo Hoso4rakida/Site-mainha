@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body{
+  background-color: white;
+}
+
+.girar{
+  animation: oGiro 1s;
+}
+header{
+  width: 100%;
+}
+
+.botao{
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes oGiro{
+  from{
+    transform: rotate(-360deg)
+  }
+  to{
+    transform: rotate(0deg);
+  }
+
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
