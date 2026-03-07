@@ -6,7 +6,7 @@ function Carrosel({imagem}:imagens) {
   
   return (
     <section>
-      <div className="overflow bg-slate-50 py-3">
+      <div className="overflow-x-hidden bg-slate-50 py-3">
         <div className="animate-marquee">
           {/*Marquee e carrosel */}
           <div className="flex gap-4 px-2">
@@ -14,7 +14,7 @@ function Carrosel({imagem}:imagens) {
               <img
                 key={IdKey}
                 src={img}
-                className="h-75 w-125 object-cover rounded-xl shadow-md"
+                className="h-32 w-40 sm:h-48 sm:w-60 md:h-60 md:w-80 lg:h-75 lg:w-125 object-cover rounded-xl shadow-md"
               />
             ))}
           </div>
@@ -25,7 +25,7 @@ function Carrosel({imagem}:imagens) {
               <img
                 key={`copy-${IdKey}`}
                 src={img}
-                className="h-75 w-125 object-cover rounded-xl shadow-md"
+                className="h-32 w-40 sm:h-48 sm:w-60 md:h-60 md:w-80 lg:h-75 lg:w-125 object-cover rounded-xl shadow-md"
               />
             ))}
           </div>
