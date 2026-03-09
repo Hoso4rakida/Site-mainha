@@ -4,6 +4,8 @@ import Bar from "./models/bar.tsx";
 import Baner from "./models/banner.tsx";
 import Carrosel from "./models/carrosel.tsx";
 import Projetos from "./models/projetos.tsx";
+import Feedbacks from "./models/feedbacks.tsx";
+import RodaPe from "./models/rodape.tsx";
 
 import img1 from "./assets/carrosel/b-012.jpg";
 import img2 from "./assets/carrosel/Heracles_-_Greek.jpg"
@@ -44,8 +46,9 @@ function App() {
         <Carrosel imagem={imagens} />
         <Carrosel imagem={imagens2} />
       </section>
-      
       <About />
+      <Feedbacks />
+      <RodaPe />
     </>
   );
 }

@@ -1,16 +1,12 @@
+//in felizmente, usei IA nessa parte, 15% do trabalho foi feito por IA
 import BannerImg from "../assets/Banner.jpg";
 
 function Baner() {
   return (
     <section className="w-full">
-      {/* Container Pai: Trocamos flex por grid!
-          - grid-cols-1 no celular
-          - grid-cols-2 no desktop
-      */}
+
       <div className="grid grid-cols-1 md:grid-cols-2 bg-white">
         
-        {/* 1. Bloco de Texto (Título e Botões) */}
-        {/* No desktop, fica na coluna 1, linha 1 */}
         <div className="order-1 md:col-start-1 md:row-start-1 flex flex-col justify-center pt-8 pb-8">
           <div className="text-center p-5">
             <h1 className="text-5xl md:text-6xl font-bold text-slate-800 leading-tight">
@@ -39,12 +35,9 @@ function Baner() {
           />
         </div>
 
-        {/* 3. Botão Saiba Mais */}
-        {/* No desktop, fica na coluna 1, linha 2. 
-            O self-end garante que ele fique encostado no final da div. */}
-        <div className="order-3 md:col-start-1 md:row-start-2 self-end border-t-4 border-slate-600 p-4 bg-white">
+        <div className="order-3 md:col-start-1 md:row-start-2 self-end border-y-4 border-slate-600 p-4 bg-white">
           <h3 className="text-lg text-center text-slate-600 uppercase tracking-widest">
-            <a href="#" className="hover:underline"><b>Saiba mais</b></a>
+            <a href="#"><b>Saiba mais</b></a>
           </h3>
         </div>
 
