@@ -1,28 +1,28 @@
 //in felizmente, usei IA nessa parte, 15% do trabalho foi feito por IA
-import BannerImg from "../assets/Banner.jpg";
+import BannerImg from "../assets/Banner.webp";
 
 function Baner() {
   return (
     <section className="w-full">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-stone-900">
         
         <div className="order-1 md:col-start-1 md:row-start-1 flex flex-col justify-center pt-8 pb-8">
           <div className="text-center p-5">
-            <h1 className="text-5xl md:text-6xl font-bold text-slate-800 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
               Arquitetura sob medida
             </h1>
-            <p className="mt-4 text-slate-600 max-w-md mx-auto">
+            <p className="mt-4 text-white max-w-md mx-auto">
               Só há um caminho para a felicidade. Não nos preocuparmos com coisas que ultrapassam o poder da nossa vontade.
             </p>
           </div>
 
           <div className="flex justify-center gap-4 mt-2">
-            <button className="border-slate-600 border-4 w-48 h-14 font-bold text-slate-600 hover:bg-slate-100 transition-colors">
-              Buttão
+            <button className="border-amber-60 border-4 w-48 h-14 font-bold text-amber-600 hover:bg-stone-800 transition-colors">
+              Projetos
             </button>
-            <button className="bg-slate-600 text-white w-48 h-14 font-bold hover:bg-slate-500 transition-colors">
-              Botão
+            <button className="bg-amber-600 text-white w-48 h-14 font-bold hover:bg-amber-700 transition-colors">
+              Saiba mais
             </button>
           </div>
         </div>
@@ -35,8 +35,8 @@ function Baner() {
           />
         </div>
 
-        <div className="order-3 md:col-start-1 md:row-start-2 self-end border-y-4 border-slate-600 p-4 bg-white">
-          <h3 className="text-lg text-center text-slate-600 uppercase tracking-widest">
+        <div className="order-3 md:col-start-1 md:row-start-2 self-end border-4 border-amber-600 p-4">
+          <h3 className="text-lg text-center text-amber-600 uppercase tracking-widest">
             <a href="#"><b>Saiba mais</b></a>
           </h3>
         </div>

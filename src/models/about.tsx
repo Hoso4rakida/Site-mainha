@@ -1,10 +1,10 @@
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.webp";
 import "../App.css";
 
 function About() {
   return (
     <section className="text-white">
-      <div className="flex flex-col sm:flex-row items-center bg-slate-600">
+      <div className="flex flex-col sm:flex-row items-center bg-amber-600">
         <div className="rounded-md justify-center sm:justify-between m-5">
           <img
             src={profile}

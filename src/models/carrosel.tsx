@@ -6,7 +6,7 @@ function Carrosel({imagem}:imagens) {
   
   return (
     <section>
-      <div className="overflow-x-hidden bg-slate-50 py-3">
+      <div className="overflow-x-hidden py-3">
         <div className="animate-marquee">
           {/*Marquee e carrosel */}
           <div className="flex gap-4 px-2">

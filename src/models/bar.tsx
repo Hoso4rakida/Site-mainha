@@ -12,15 +12,15 @@ function Bar() {
         <p className="pl-5">Moro logo ali</p>
         <p className="pr-5">meu numero: 4002-8922</p>
       </div>
-      <div className="bg-slate-900 text-white shadow-lg" >
-      <div className="flex justify-between bg-slate-800 p-5">
-        <div>Site Legal</div>
+      <div className="bg-stone-900 text-white shadow-lg" >
+      <div className="flex justify-between bg-stone-800 p-5">
+        <div>Cristiane planejado</div>
         <div>
-          Com Texto Legal
+          Contato
           <span 
-          className="card p-3 m-2 bg-slate-600 border border-slate-500 cursor-pointer hover:bg-slate-700"
+          className="card p-3 m-2 bg-stone-600 border border-stone-500 cursor-pointer hover:bg-slate-700 rounded-md"
           onClick={mudarMenu}>
-            {menu? "yes" : "no"}
+            {menu? "Fechar" : "Abrir"}
           </span>
         </div>
       </div>
