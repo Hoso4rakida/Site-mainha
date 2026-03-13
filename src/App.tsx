@@ -4,7 +4,6 @@ import Bar from "./models/bar.tsx";
 import Baner from "./models/banner.tsx";
 import Carrosel from "./models/carrosel.tsx";
 import Projetos from "./models/projetos.tsx";
-import Feedbacks from "./models/feedbacks.tsx";
 import RodaPe from "./models/rodape.tsx";
 
 const arquivos = import.meta.glob('./assets/carrosel/*', { eager: true });
@@ -22,14 +21,13 @@ function App() {
       <Projetos/>
       
       <section>
-        <h2 className="text-2xl text-center p-3 text-white">
-          <b>Projetos feito por cristiane</b>
+        <h2 className="text-2xl text-center p-3 text-white" id="Projetos">
+          <b>Projetos feito por Christiane</b>
         </h2>
-        <Carrosel imagem={listImages} />
-        <Carrosel imagem={listImages} />
+        <Carrosel imagem={listImages} right={false} />
+        <Carrosel imagem={listImages} right={true} />
       </section>
       <About />
-      <Feedbacks />
       <RodaPe />
     </div>
   );

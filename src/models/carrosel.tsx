@@ -1,13 +1,14 @@
 interface imagens{ 
-  imagem: string[];
+  imagem: string[],
+  right: boolean
 }
 
-function Carrosel({imagem}:imagens) {
+function Carrosel({ imagem, right }: imagens) {
   
   return (
     <section>
       <div className="overflow-x-hidden py-3">
-        <div className="animate-marquee">
+        <div className={right ? "animate-marquee" : "animate-marquee-reverse"}>
           {/*Marquee e carrosel */}
           <div className="flex gap-4 px-2">
             {imagem.map((img, IdKey) => (

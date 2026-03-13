@@ -1,43 +1,65 @@
 @import "tailwindcss";
 
-body{
-  background-color: white;
+body {
+    background-color: white;
 }
 
-.girar{
-  animation: oGiro 1s;
+.girar {
+    animation: oGiro 1s;
 }
-header{
-  width: 100%;
-}
-
-.botao{
-  background-color: brown;
-  color: white;
-  cursor: pointer;
+header {
+    width: 100%;
 }
 
-@keyframes oGiro{
-  from{
-    transform: rotate(-360deg)
-  }
-  to{
-    transform: rotate(0deg);
-  }
+.botao {
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
 
+@keyframes oGiro {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } 
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+100% {
+        transform: translateX(0);
+    }
 }
 
 .animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: scroll 30s linear infinite;
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.animate-marquee-reverse {
+    display: flex;
+    width: max-content;
+    animation: scroll-reverse 30s linear infinite;
 }
 
 .animate-marquee:hover {
-  animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+html {
+  scroll-behavior: smooth;
 }
